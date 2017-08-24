@@ -1,8 +1,10 @@
 import React from 'react';
 {/* the reason why we do getFunName is because this is the name of the function */}
+{/* helpers is where we store our functions */}
 import { getFunName } from '../helpers';
 
 class StorePicker extends React.Component {
+	// the constructor sets up the initial states
 	// constructor() {
 		// super();
 		//{/* this is equal to the StorePicker component */}
@@ -14,9 +16,8 @@ class StorePicker extends React.Component {
 		//second, going to transition from / to /store/:storeId
 		// const storeId = this.storeInput.value;
 		// this.context.router.transitionTo(`/store${storeId}`);
-
-		event.preventDefault();
-		console.log('You Changed the URL');
+		e.preventDefault();
+		// console.log('You Changed the URL');
 		// first grab the text from the box
 		const storeId = this.storeInput.value;
 		// second we're going to transition from / to /store/:storeId
